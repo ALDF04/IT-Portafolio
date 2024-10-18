@@ -21,6 +21,10 @@ I will repair and Test an ethernet cables
 3. Used "ip link show" to check network interfaces
 4. checked ethernet speed using command " ethtool eth0" and configured settings for auto negotiation
 
+## Screenshoots:
+![Command Output for ip link show](Layer 1 Physical/Layer 1-Command ip link show.jpeg)
+
+
 ## Automating NIC checks with a bash script
 I wrote a simple bash script to automatically check the status of the network interfaces and display information using ip link and ethtool
 
