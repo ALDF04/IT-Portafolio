@@ -1,15 +1,24 @@
 # Proyect - Cable testing And Troubleshooting. the idea is learn how to test the cables, 
 identify faults and learn the perfect way to fix them using the appropiate tools
-## Overview
+
+# Overview
 I will repair and Test an ethernet cables 
 
 # Tools to use on linux:
-- ip link show: to show network interfaces and their states
-- ethtool (interface): to help me view or change hardware settings on ethernet interfaces
-- ping & traceroute: for basic connectivity testing at the physical level
+1. ip link show: to show network interfaces and their states
+2. ethtool (interface): to help me view or change hardware settings on ethernet interfaces
+3. ping & traceroute: for basic connectivity testing at the physical level
 
 # Steps I wil take physically:
 1. Test cables using an enthernet tester 
 2. RE crimped connectors using the t568 
 3. I will verified connectivity with the command "ping"
 
+## Steps Taken
+1. Tested ethernet cable using an ethernet cable tester
+2. Fixed ethernet cable re instaliing RJ45 connectors in the dammaged cables
+3. Used "ip link show" to check network interfaces
+4. checked ethernet speed using command " ethtool eth0" and configured settings for auto negotiation
+
+### Results 
+By fixing faulty cables and adjusting network interfaces on Linux, I ensured stable network connectivity
