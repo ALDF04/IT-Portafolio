@@ -1,0 +1,15 @@
+# Proyect - Cable testing And Troubleshooting. the idea is learn how to test the cables, 
+identify faults and learn the perfect way to fix them using the appropiate tools
+## Overview
+I will repair and Test an ethernet cables 
+
+# Tools to use on linux:
+- ip link show: to show network interfaces and their states
+- ethtool (interface): to help me view or change hardware settings on ethernet interfaces
+- ping & traceroute: for basic connectivity testing at the physical level
+
+# Steps I wil take physically:
+1. Test cables using an enthernet tester 
+2. RE crimped connectors using the t568 
+3. I will verified connectivity with the command "ping"
+
