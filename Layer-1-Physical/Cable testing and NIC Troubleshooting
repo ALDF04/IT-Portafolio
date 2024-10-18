@@ -22,7 +22,7 @@ I will repair and Test an ethernet cables
 4. checked ethernet speed using command " ethtool eth0" and configured settings for auto negotiation
 
 ## Screenshoots:
-![Command Output for ip link show](Layer-1-Physical/ip-link-show.jpeg)
+![Command Output for ip link show](https://github.com/ALDF04/IT-Portafolio/blob/main/Layer-1-Physical/ip-link-show.jpeg)
 
 
 
