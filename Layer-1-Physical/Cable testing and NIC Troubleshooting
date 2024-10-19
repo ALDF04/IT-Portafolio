@@ -25,7 +25,7 @@ In this project, I will repair and test Ethernet cables using a cable tester and
 ### Screenshots:
 
 - ip link show output:
-  ![ip link show](Images-Layer-1/ip-link-show.jpeg)
+  ![ip link show](../Images-Layer-1/ip-link-show.jpeg)
 
 - Automating NIC Checks with Bash Script:
   ![Automating NIC Checks](Images-Layer-1/automating-nic-checks-with-bash-script.jpg)
