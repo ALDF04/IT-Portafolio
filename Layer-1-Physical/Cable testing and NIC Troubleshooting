@@ -1,52 +1,69 @@
-# Proyect - Cable testing And Troubleshooting. the idea is learn how to test the cables, 
-identify faults and learn the perfect way to fix them using the appropiate tools
+# Project: Cable Testing and Troubleshooting
 
-# Overview
-I will repair and Test an ethernet cables 
+The goal of this project is to learn how to test Ethernet cables, identify faults, and fix them using the appropriate tools. Additionally, I will diagnose NIC issues using Linux commands like `ip link` and `ethtool`.
 
-# Tools and commands to use on linux:
-1. ip link show: to show network interfaces and their states
-2. ethtool (interface): to help me view or change hardware settings on ethernet interfaces
-3. ping & traceroute: for basic connectivity testing at the physical level
-4. Sudo ip link set ethname up/down: bring the interface UP or Down: If an interface is down, you can bring it up with this commands
+## Overview
+In this project, I will repair and test Ethernet cables using a cable tester and verify network connectivity.
 
-# Steps I wil take physically:
-1. Test cables using an enthernet tester 
-2. RE crimped connectors using the t568 
-3. I will verified connectivity with the command "ping"
+## Tools and Commands to Use on Linux:
+1. ip link show: Show network interfaces and their states.
+2. ethtool (interface): View or change hardware settings on Ethernet interfaces.
+3. ping & traceroute: Basic connectivity testing at the physical level.
+4. Sudo ip link set ethname up/down: Bring the interface UP or DOWN.
 
-## Steps Taken
-1. Tested ethernet cable using an ethernet cable tester
-2. Fixed ethernet cable re instaliing RJ45 connectors in the dammaged cables
-3. Used "ip link show" to check network interfaces
-4. checked ethernet speed using command " ethtool eth0" and configured settings for auto negotiation
+## Steps Taken Physically:
+1. Tested the cables using an Ethernet tester.
+2. Re-crimped connectors using the T568B standard.
+3. Verified connectivity using the `ping` command.
 
-## Screenshoots:
-![ip link show](Images-Layer-1/ip-link-show.jpeg)
+## Steps Taken Using Linux Tools:
+1. Tested the Ethernet cable using an Ethernet cable tester.
+2. Re-installed RJ45 connectors in damaged cables.
+3. Used `ip link show` to check network interfaces.
+4. Checked Ethernet speed using `ethtool eth0` and configured settings for auto-negotiation.
 
-## Automating NIC checks with a bash script
-I wrote a simple bash script to automatically check the status of the network interfaces and display information using ip link and ethtool
+### Screenshots:
 
+- ip link show output:
+  ![ip link show](Images-Layer-1/ip-link-show.jpeg)
 
-### Results 
-By fixing faulty cables and adjusting network interfaces on Linux, I ensured stable network connectivity
+- Automating NIC Checks with Bash Script:
+  ![Automating NIC Checks](Images-Layer-1/automating-nic-checks-with-bash-script.jpg)
 
+- Bringing Interface Up/Down:
+  ![Interface Up/Down](Images-Layer-1/bring-the-interface-up-down.jpeg)
 
-### Understanding resuls after command ip link show 
-1. outputheaders: 1: lo: indicates the loopback interface (a virtual interface used for internal cominucation within the system)
-1.1 2: enp7s0: this is the name of the ethernet network interface
-1.2 3: wlp1350: this is the name of the wireless network interface (WI-FI)
+- Ethtool Output:
+  ![Ethtool Output](Images-Layer-1/sudo-ethtool-(interface-name).jpeg)
+
+## Automating NIC Checks with a Bash Script
+
+I wrote a simple Bash script to automatically check the status of the network interfaces and display information using `ip link` and `ethtool`.
+
+### Results:
+
+By fixing faulty cables and adjusting network interfaces on Linux, I ensured stable network connectivity.
+
+### Understanding Results After `ip link show`:
+
+1. Output Headers:
+   - `1: lo`: This is the loopback interface (used for internal communication within the system).
+   - `2: enp7s0`: This is the Ethernet network interface.
+   - `3: wlp1350`: This is the wireless network interface (Wi-Fi).
 
 2. Interface Status:
-2.1 UP & DOWN: indicate whether the interface is active(UP) or inactive (DOWN)
-2.2 UNKNOWN:Indicates that the interface is inactive, waiting to be activated
+   - `UP` & `DOWN`: Indicates whether the interface is active (UP) or inactive (DOWN).
+   - `UNKNOWN`: Indicates that the interface is inactive, waiting to be activated.
 
 3. MAC Addresses:
-3.1 link/ether (address): Displays the MAC address of the interface, whicj is a unique identifier for each network device
-(00:00:00:00:00:00:00)(94:57:a5:06:9c:9b
+   - `link/ether`: Displays the MAC address of the interface, which is a unique identifier for each network device.
 
-4.MTU (Maximum Transmission Unit):
-4.1 mtu (1500/65536): the maximum size of packets that can be sent through that interface.
+4. MTU (Maximum Transmission Unit):
+   - The maximum size of packets that can be sent through the interface. Common MTU values are 1500 for Ethernet.
 
-5. Additional Status: 
-5.1: BROADCAST/MULTICAST: Indicate that the interface can send data to multiple recipients.
+5. Additional Status:
+   - BROADCAST/MULTICAST: Indicates that the interface can send data to multiple recipients.
+
+## Conclusion:
+
+Through this project, I learned how to test and repair physical network issues, while using Linux commands to verify and ensure network stability.
